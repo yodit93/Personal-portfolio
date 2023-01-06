@@ -333,3 +333,26 @@ function validate() {
 submitButton.addEventListener('click', () => {
   validate();
 });
+
+const form1 = document.querySelector('#contact');
+form1.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const obj = {
+    fullName: document.querySelector('#name').value,
+    emailAdress: document.querySelector('#email').value,
+    message: document.querySelector('#textarea').value,
+  };
+
+  localStorage.setItem('text', JSON.stringify(obj));
+});
+
+const retrievedObject = localStorage.getItem('text');
+const getValue = JSON.parse(retrievedObject);
+
+window.addEventListener('load', () => {
+  if (localStorage.getItem('text')) {
+    document.querySelector('#name').value = getValue.fullName;
+    document.querySelector('#email').value = getValue.emailAdress;
+    document.querySelector('#textarea').value = getValue.message;
+  }
+});
