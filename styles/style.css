@@ -628,8 +628,8 @@ ul {
 
 /* contact validator */
 
-.span.error-msg {
-  display: block;
+.error-msg {
+  visibility: visible;
   color: white;
   background-color: red;
   text-align: center;
