@@ -320,7 +320,7 @@ const errorMsg = document.querySelector('.span');
 function validate() {
   const inputEmail = document.getElementById('email');
   const inpuEmailText = inputEmail.value;
-  const validator = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+  const validator = /[^a-z]/;
   document.forms[1].onsubmit = function email(e) {
     if (!(validator.test(inpuEmailText))) {
       errorMsg.className('error-msg');
@@ -328,3 +328,7 @@ function validate() {
     }
   };
 }
+
+submitButton.addEventListener('click', () => {
+  validateFun();
+});
