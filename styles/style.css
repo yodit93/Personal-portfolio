@@ -561,6 +561,10 @@ ul {
 /* popup window */
 .popup-wind {
   display: none;
+  width: 100wh;
+  height: 100vh;
+  z-index: 100;
+  backdrop-filter: blur(20px);
 }
 
 .popup-wind.active {
