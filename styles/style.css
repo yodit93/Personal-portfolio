@@ -625,3 +625,12 @@ ul {
   font-size: 1.2rem;
   font-weight: 500;
 }
+
+/* contact validator */
+
+.span.error-msg {
+  display: block;
+  color: white;
+  background-color: red;
+  text-align: center;
+}
