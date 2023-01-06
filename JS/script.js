@@ -300,4 +300,5 @@ seeProject.forEach((links) => {
 closeBtn.addEventListener('click', () => {
   portfolio.innerHTML = projects;
   popupWindow.classList.remove('active');
+  window.location.reload();
 });
