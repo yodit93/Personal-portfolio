@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/desktop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section"><a class="logo" href="#">My Logo</a></div>
+    <nav class="right-section">
+      <a class="icon-menu" href="#"><img src="images/Icon - Menu.png" alt=""></a>
+      <div class="click-event">
+        <div class="close-btn">&#10005;</div>
+        <ul class="menu-lists" id="menu-desk">
+          <li><a class="port-nav" href="#portfolio">Portfolio</a></li>
+          <li><a class="abt-nav" href="#about">About</a></li>
+          <li><a class="cont-nav" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <div class="popup-cont">
+    
+  </div>
+
+  <main class="main">
+    <section class="headline">
+      <div class="wrapp-align">
+        <h1 class="introduction">I’m Mariane
+          Glad to see you!</h1>
+        <p class="abt">I’m a software developer! I can help you build a product , 
+            feature or website Look through some of my work and experience! 
+            If you like what you see and have a project you need coded, 
+            don’t hestiate to contact me.
+        </p>
+        <p class="supporting-text">LET'S CONNECT</p>
+        <ul class="social-media-links-header">
+          <li><a href="#"><img src="images/Vector.svg" alt=""></a></li>
+          <li><a href="#"><img src="images/Linkedin icon.svg" alt=""></a></li>
+          <li><a href="#"><img src="images/Vector (1).svg" alt=""></a></li>
+          <li><a href="#"><img src="images/Vector (2).svg" alt=""></a></li>
+          <li><a href="#"><img src="images/Vector (3).svg" alt=""></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="project-intro-grid" id="portfolio">
+      
+    </div>
+    <section class="relative-pos" id="about">
+      <section class="about-me">
+        <section class="self-intro">
+          <h1 class="title set-margin">About Myself</h1>
+          <p class="about set-margin">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+          <p class="social-text set-margin">LET’S CONNECT</p>
+          <ul class="social-media-links set-margin">
+            <li><a href="#"><img class="links" src="images/Vector (2).svg" alt=""></a></li>
+            <li><a href="#"><img class="links" src="images/Linkedin icon.svg" alt=""></a></li>
+            <li><a href="#"><img class="links" src="images/Vector (3).svg" alt=""></a></li>
+            <li><a href="#"><img class="links" src="images/Vector.svg" alt=""></a></li>
+            <li><a href="#"><img class="links" src="images/Vector (1).svg" alt=""></a></li>
+          </ul>
+          <div class="resume">
+            <a href="">Get my resume</a>
+          </div>
+        </section>
+        <ul class="additional-info">
+          <li>
+            <div class="div-flex">
+              <h2>Languages</h2>
+              <img src="images/about-img/Icon - Chevron - Down - Larger.svg" alt="">
+            </div>
+            <ul class="lang-container-lists">
+              <li class="flex">
+                <img class="flex-img" src="images/about-img/JS.svg" alt="">
+                <p>JavaSript</p>
+              </li>
+              <li class="flex">
+                <img class="flex-img" src="images/about-img/Html.svg" alt="">
+                <p>HTML</p>
+              </li>
+              <li class="flex">
+                <img class="flex-img" src="images/about-img/Css.svg" alt="">
+                <p>CSS</p>
+              </li>
+            </ul>
+          </li>
+          <li class="div-flex with-border">
+            <h2 class="frame">Frameworks</h2>
+            <img src="images/about-img/Icon - Chevron - Right - Larger.svg" alt="">
+          </li>
+          <li class="div-flex with-border">
+            <h2 class="skills">Skills</h2>
+            <img src="images/about-img/Icon - Chevron - Right - Larger.svg" alt="">
+          </li>
+        </ul>
+      </section>
+      <section class="contact-sec" id="contact">
+        <div class="div-form">
+          <form class="contact-form" action="https://formspree.io/f/xeqdyldr" method="POST">
+            <h1 class="contact-me-heading">Contact me</h1>
+            <p class="colab-interest">If you have an application you are interested in developing, 
+              a feature that you need built or a project that needs coding. 
+              I’d love to help with it </p>
+            <fieldset class="form-fieldset">
+              <input id="name" type="text" name="name" placeholder="Yeremias" maxlength="30" required>
+              <input id="email" type="email" name="email" required placeholder="natajayanj14@gmail.com">
+              <textarea id="textarea" name="comment" cols="30" rows="10" required maxlength="500" placeholder="Write your message here"></textarea>
+            </fieldset>
+            <button id="submit-button" type="submit" name="submit">Get It Touch</button>
+          </form>
+          <figure class="end">
+            <img src="images/Shape.svg" alt="">
+          </figure>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="./JS/script.js"></script>
+</body>
+</html>
