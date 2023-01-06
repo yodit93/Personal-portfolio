@@ -20,6 +20,7 @@ menuList.forEach((list) => {
 // project details pop up window
 
 const portfolio = document.querySelector('.project-intro-grid');
+const popupCont = document.querySelector('.popup-cont');
 
 const projects = `
 <section class="project-intro">
@@ -140,8 +141,8 @@ const proObjects = [
     `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
     but also the leap into electronic typesetting, remaining essent`,
     technologies: ['html', 'css', 'javaScript'],
-    demo: 'https://chepkok3.github.io/Personal-Portfolio/#',
-    source: 'https://github.com/chepkok3/Personal-Portfolio',
+    demo: 'https://yodit93.github.io/Personal-portfolio/',
+    source: 'https://github.com/yodit93/Personal-portfolio',
   },
   {
     name: 'Tonic',
@@ -151,8 +152,8 @@ const proObjects = [
     `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
     but also the leap into electronic typesetting, remaining essent`,
     technologies: ['html', 'css', 'javaScript'],
-    demo: 'https://chepkok3.github.io/Personal-Portfolio/#',
-    source: 'https://github.com/chepkok3/Personal-Portfolio',
+    demo: 'https://yodit93.github.io/Personal-portfolio/',
+    source: 'https://github.com/yodit93/Personal-portfolio',
   },
   {
     name: 'Tonic',
@@ -162,8 +163,8 @@ const proObjects = [
     `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
     but also the leap into electronic typesetting, remaining essent`,
     technologies: ['html', 'css', 'javaScript'],
-    demo: 'https://chepkok3.github.io/Personal-Portfolio/#',
-    source: 'https://github.com/chepkok3/Personal-Portfolio',
+    demo: 'https://yodit93.github.io/Personal-portfolio/',
+    source: 'https://github.com/yodit93/Personal-portfolio',
   },
   {
     name: 'Tonic',
@@ -173,132 +174,143 @@ const proObjects = [
     `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
     but also the leap into electronic typesetting, remaining essent`,
     technologies: ['html', 'css', 'javaScript'],
-    demo: 'https://chepkok3.github.io/Personal-Portfolio/#',
-    source: 'https://github.com/chepkok3/Personal-Portfolio',
+    demo: 'https://yodit93.github.io/Personal-portfolio/',
+    source: 'https://github.com/yodit93/Personal-portfolio',
   },
 ];
 
-const popupWindow = document.createElement('div');
-popupWindow.classList.add('popup-wind');
-const dContSec = document.createElement('section');
-dContSec.classList.add('d-sec');
-const dContainer = document.createElement('div');
-dContainer.classList.add('d-cont');
-const dTitle = document.createElement('h2');
-dTitle.innerText = 'Tonic';
-dTitle.classList.add('project-title');
-dContainer.appendChild(dTitle);
+function selectProject(idToChecked) {
+  proObjects.forEach((obj) => {
+    if (obj.id === idToChecked) {
+      const popupWindow = document.createElement('div');
+      popupWindow.classList.add('popup-wind');
+      const dContSec = document.createElement('section');
+      dContSec.classList.add('d-sec');
+      const dContainer = document.createElement('div');
+      dContainer.classList.add('d-cont');
+      const dTitle = document.createElement('h2');
+      dTitle.innerText = obj.name;
+      dTitle.classList.add('project-title');
+      dContainer.appendChild(dTitle);
 
-const dStatsCon = document.createElement('div');
-dStatsCon.classList.add('project-stats', 'margin-set');
-const dStatsPlace = document.createElement('p');
-dStatsPlace.innerText = 'CANOPY';
-dStatsPlace.classList.add('project-place');
-dStatsCon.appendChild(dStatsPlace);
+      const dStatsCon = document.createElement('div');
+      dStatsCon.classList.add('project-stats', 'margin-set');
+      const dStatsPlace = document.createElement('p');
+      dStatsPlace.innerText = 'CANOPY';
+      dStatsPlace.classList.add('project-place');
+      dStatsCon.appendChild(dStatsPlace);
 
-const dStatsImg = document.createElement('img');
-dStatsImg.src = './images/project-img/Counter.svg';
-dStatsCon.appendChild(dStatsImg);
-const dStatsType = document.createElement('p');
-dStatsType.innerText = 'Back End Dev';
-dStatsType.classList.add('project-type');
-dStatsCon.appendChild(dStatsType);
+      const dStatsImg = document.createElement('img');
+      dStatsImg.src = './images/project-img/Counter.svg';
+      dStatsCon.appendChild(dStatsImg);
+      const dStatsType = document.createElement('p');
+      dStatsType.innerText = 'Back End Dev';
+      dStatsType.classList.add('project-type');
+      dStatsCon.appendChild(dStatsType);
 
-const dStatsImg2 = document.createElement('img');
-dStatsImg2.src = './images/project-img/Counter.svg';
-dStatsCon.appendChild(dStatsImg2);
+      const dStatsImg2 = document.createElement('img');
+      dStatsImg2.src = './images/project-img/Counter.svg';
+      dStatsCon.appendChild(dStatsImg2);
 
-const dStatsYear = document.createElement('p');
-dStatsYear.innerText = '2015';
-dStatsYear.classList.add('project-year');
-dStatsCon.appendChild(dStatsYear);
-dContainer.appendChild(dStatsCon);
+      const dStatsYear = document.createElement('p');
+      dStatsYear.innerText = '2015';
+      dStatsYear.classList.add('project-year');
+      dStatsCon.appendChild(dStatsYear);
+      dContainer.appendChild(dStatsCon);
 
-const dImageCont = document.createElement('figure');
-dImageCont.classList.add('project-picture-container', 'dpro-img-cont');
-const dImage = document.createElement('img');
-dImage.src = './images/project-img/project1.svg';
-dImage.classList.add('project-picture');
-dImageCont.appendChild(dImage);
-dContainer.appendChild(dImageCont);
+      const dImageCont = document.createElement('figure');
+      dImageCont.classList.add('project-picture-container', 'dpro-img-cont');
+      const dImage = document.createElement('img');
+      dImage.src = obj.featuredImage;
+      dImage.classList.add('project-picture');
+      dImageCont.appendChild(dImage);
+      dContainer.appendChild(dImageCont);
 
-const dFlexCont = document.createElement('div');
-dFlexCont.classList.add('dflex-cont');
-const dProjInfo = document.createElement('p');
-dProjInfo.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
-dProjInfo.classList.add('project-description', 'margin-set', 'dpro-disc');
-dFlexCont.appendChild(dProjInfo);
+      const dFlexCont = document.createElement('div');
+      dFlexCont.classList.add('dflex-cont');
+      const dProjInfo = document.createElement('p');
+      dProjInfo.innerText = obj.description;
+      dProjInfo.classList.add('project-description', 'margin-set', 'dpro-disc');
+      dFlexCont.appendChild(dProjInfo);
 
-const dRightCont = document.createElement('div');
-dRightCont.classList.add('dright-cont');
-const dLangCont = document.createElement('ul');
-dLangCont.classList.add('dp-lang-btn');
-const dLangCont1 = document.createElement('div');
-dLangCont1.classList.add('prog-lang-buttons', 'margin-set');
-const dLangCont2 = document.createElement('div');
-dLangCont2.classList.add('prog-lang-buttons', 'margin-set');
+      const dRightCont = document.createElement('div');
+      dRightCont.classList.add('dright-cont');
+      const dLangCont = document.createElement('ul');
+      dLangCont.classList.add('dp-lang-btn');
+      const dLangCont1 = document.createElement('div');
+      dLangCont1.classList.add('prog-lang-buttons', 'margin-set');
+      const dLangCont2 = document.createElement('div');
+      dLangCont2.classList.add('prog-lang-buttons', 'margin-set');
 
-const dataList = ['github', 'ruby', 'bootstrap'];
+      const dataList = ['github', 'ruby', 'bootstrap'];
 
-proObjects[0].technologies.forEach((list) => {
-  const dLang1 = document.createElement('li');
-  dLang1.innerText = list;
-  dLang1.classList.add(list, 'lang');
-  dLangCont1.appendChild(dLang1);
-});
-dLangCont.appendChild(dLangCont1);
-dataList.forEach((list) => {
-  const dLang = document.createElement('li');
-  dLang.innerText = list;
-  dLang.classList.add(list, 'lang', 'm-hide');
-  dLangCont2.appendChild(dLang);
-});
-dLangCont.appendChild(dLangCont2);
-dRightCont.appendChild(dLangCont);
+      obj.technologies.forEach((list) => {
+        const dLang1 = document.createElement('li');
+        dLang1.innerText = list;
+        dLang1.classList.add(list, 'lang');
+        dLangCont1.appendChild(dLang1);
+      });
+      dLangCont.appendChild(dLangCont1);
+      dataList.forEach((list) => {
+        const dLang = document.createElement('li');
+        dLang.innerText = list;
+        dLang.classList.add(list, 'lang', 'm-hide');
+        dLangCont2.appendChild(dLang);
+      });
+      dLangCont.appendChild(dLangCont2);
+      dRightCont.appendChild(dLangCont);
 
-const dButtonCont = document.createElement('div');
-dButtonCont.classList.add('dbtn-cont');
-const seeLiveBtn = document.createElement('a');
-seeLiveBtn.innerHTML = 'See live <img src="./images/seelive.svg" alt="Live demo">';
-seeLiveBtn.src = '';
-seeLiveBtn.classList.add('see-project-link', 's-btn');
-dButtonCont.appendChild(seeLiveBtn);
-const seeSrcBtn = document.createElement('a');
-seeSrcBtn.innerHTML = 'See Source <img src="./images/see-src.svg" alt="source code">';
-seeSrcBtn.classList.add('see-project-link', 's-btn');
-seeSrcBtn.src = '';
-dButtonCont.appendChild(seeSrcBtn);
-dRightCont.appendChild(dButtonCont);
-dFlexCont.appendChild(dRightCont);
-dContainer.appendChild(dFlexCont);
+      const dButtonCont = document.createElement('div');
+      dButtonCont.classList.add('dbtn-cont');
+      const seeLiveBtn = document.createElement('a');
+      seeLiveBtn.innerHTML = 'See live <img src="./images/seelive.svg" alt="Live demo">';
+      seeLiveBtn.src = obj.demo;
+      seeLiveBtn.classList.add('see-project-link', 's-btn');
+      dButtonCont.appendChild(seeLiveBtn);
+      const seeSrcBtn = document.createElement('a');
+      seeSrcBtn.innerHTML = 'See Source <img src="./images/see-src.svg" alt="source code">';
+      seeSrcBtn.classList.add('see-project-link', 's-btn');
+      seeSrcBtn.src = obj.source;
+      dButtonCont.appendChild(seeSrcBtn);
+      dRightCont.appendChild(dButtonCont);
+      dFlexCont.appendChild(dRightCont);
+      dContainer.appendChild(dFlexCont);
 
-const closeBtn = document.createElement('div');
-closeBtn.innerText = '\u2715';
-closeBtn.classList.add('dclose-btn');
-dContainer.appendChild(closeBtn);
+      const closeBtn = document.createElement('div');
+      closeBtn.innerText = '\u2715';
+      closeBtn.classList.add('dclose-btn');
+      dContainer.appendChild(closeBtn);
 
-dContSec.appendChild(dContainer);
+      dContSec.appendChild(dContainer);
 
-const dBtmLineFig = document.createElement('figure');
-dBtmLineFig.classList.add('end', 'align-btm');
-const dBottomLine = document.createElement('img');
-dBottomLine.src = './images/Shape.svg';
-dBtmLineFig.appendChild(dBottomLine);
-dContSec.appendChild(dBtmLineFig);
-popupWindow.appendChild(dContSec);
-portfolio.appendChild(popupWindow);
+      const dBtmLineFig = document.createElement('figure');
+      dBtmLineFig.classList.add('end', 'align-btm');
+      const dBottomLine = document.createElement('img');
+      dBottomLine.src = './images/Shape.svg';
+      dBtmLineFig.appendChild(dBottomLine);
+      dContSec.appendChild(dBtmLineFig);
+      popupWindow.appendChild(dContSec);
+      popupCont.appendChild(popupWindow);
+
+      closeBtn.addEventListener('click', () => {
+        portfolio.innerHTML = projects;
+        popupCont.classList.remove('active');
+        document.querySelector('.header').style.display = 'block';
+        document.querySelector('.main').style.display = 'block';
+        window.location.reload();
+      });
+    }
+  });
+}
 
 const seeProject = document.querySelectorAll('.see-project-link');
 seeProject.forEach((links) => {
-  links.addEventListener('click', () => {
-    portfolio.innerHTML = '';
-    portfolio.appendChild(popupWindow);
-    popupWindow.classList.add('active');
+  links.addEventListener('click', (event) => {
+    const checkedButton = event.target;
+    const idToChecked = checkedButton.id;
+    document.querySelector('.header').style.display = 'none';
+    document.querySelector('.main').style.display = 'none';
+    selectProject(idToChecked);
+    popupCont.classList.add('active');
   });
-});
-
-closeBtn.addEventListener('click', () => {
-  portfolio.innerHTML = projects;
-  popupWindow.classList.remove('active');
-  window.location.reload();
 });
