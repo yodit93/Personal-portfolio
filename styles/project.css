@@ -1,0 +1,132 @@
+.project-intro-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 88px;
+  padding: 114px 24px;
+}
+
+.project-intro {
+  padding: 16px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.margin-set,
+.project-picture-container {
+  margin: 0 0 12px 0;
+}
+
+.project-picture {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 0 0 12px 0;
+}
+
+.project-stats {
+  display: flex;
+  align-items: center;
+}
+
+.project-stats > * {
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 8px 0;
+}
+
+.project-place {
+  color: #344563;
+}
+
+.project-type,
+.project-year {
+  color: #7a869a;
+}
+
+.project-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.prog-lang-buttons {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.html-link {
+  width: 53px;
+}
+
+.css-link {
+  width: 45px;
+}
+
+.js-link {
+  width: 89px;
+}
+
+.lang {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.see-project {
+  display: flex;
+  align-items: center;
+}
+
+.see-project-link {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  padding: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.see-project-link:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: white;
+}
+
+.see-project-link:active {
+  color: white;
+  background: #2230d2;
+}
