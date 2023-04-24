@@ -20,7 +20,7 @@
 
 # 📖 My-Portfolio: <a name="about-project"></a>
 
-> My-portfolio project is created using HTML and CSS. Here on the project, I prepared portfolio for both mobile and desktop users by relying on Figma Portfolio Template 1. Specifically on this project I have created the desktop version.
+> My-portfolio website is created to showcases my skills and projects I have worked on. It also has a contact form that allows users to send me a message.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
