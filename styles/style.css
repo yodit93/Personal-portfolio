@@ -16,6 +16,10 @@ p {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* header section */
 
 .header {
@@ -620,6 +624,7 @@ ul {
 .dclose-btn {
   color: #67798e;
   position: absolute;
+  cursor: pointer;
   top: 3%;
   right: 10%;
   font-size: 1.2rem;

@@ -24,158 +24,251 @@ const popupCont = document.querySelector('.popup-cont');
 
 const projects = `
 <section class="project-intro">
-<figure class="project-picture-container">
-  <img class="project-picture" src="images/project-img/project1.svg" alt="">
-</figure>
-<div class="project-intro-right">
-  <h1 class="project-title">Tonic</h1>
-  <div class="project-stats margin-set">
-    <p class="project-place">CANOPY</p>
-    <img src="images/project-img/Counter.svg" alt="">
-    <p class="project-type">Back End Dev</p>
-    <img src="images/project-img/Counter.svg" alt="">
-    <p class="project-year">2015</p>
+  <figure class="project-picture-container">
+    <img class="project-picture" src="images/project-img/gems.PNG" alt="GEMS website image">
+  </figure>
+  <div class="project-intro-right">
+    <h1 class="project-title">GEMS</h1>
+    <div class="project-stats margin-set">
+      <p class="project-place">Ethiopia</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-type">Full Stack Dev</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-year">2023</p>
+    </div>
+    <p class="project-description margin-set">A GEMS website helps motivational speech lovers to get information about the program details.
+    </p>
+    <ul class="prog-lang-buttons margin-set">
+      <li><a class="html lang" href="">html</a></li>
+      <li><a class="css lang" href="">css</a></li>
+      <li><a class="js lang" href="">javascript</a></li>
+    </ul>
+    <div class="see-project">
+      <a id="id1" class="see-project-link" href="#">See Project</a>
+    </div>
   </div>
-  <p class="project-description margin-set">A daily selection of privately personalized reads; 
-      no accounts or sign-ups required.
-  </p>
-  <ul class="prog-lang-buttons margin-set">
-    <li><a class="html lang" href="">html</a></li>
-    <li><a class="css lang" href="">css</a></li>
-    <li><a class="js lang" href="">javascript</a></li>
-  </ul>
-  <div class="see-project">
-    <a id="id1" class="see-project-link" href="#">See Project</a>
-  </div>
-</div>
 </section>
 <section class="project-intro">
-<figure class="project-picture-container order">
-  <img class="project-picture" src="images/project-img/project2.svg" alt="">
-</figure>
-<div class="project-intro-right">
-  <h1 class="project-title">Multi-Post
-    Stories</h1>
-  <div class="project-stats margin-set">
-    <p class="project-place">CANOPY</p>
-    <img src="images/project-img/Counter.svg" alt="">
-    <p class="project-type">Back End Dev</p>
-    <img src="images/project-img/Counter.svg" alt="">
-    <p class="project-year">2015</p>
+  <figure class="project-picture-container order">
+    <img class="project-picture" src="images/project-img/awesomebooks.PNG" alt="Awesome books website image">
+  </figure>
+  <div class="project-intro-right">
+    <h1 class="project-title">Awesome Books</h1>
+    <div class="project-stats margin-set">
+      <p class="project-place">Github</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-type">Full Stack Dev</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-year">2023</p>
+    </div>
+    <p class="project-description margin-set">Awesome books is a simple website that displays a list of books and allows users to add and remove books from that list.
+    </p>
+    <ul class="prog-lang-buttons margin-set">
+      <li><a class="html lang" href="">html</a></li>
+      <li><a class="css lang" href="">css</a></li>
+      <li><a class="js lang" href="">javascript</a></li>
+    </ul>
+    <div class="see-project">
+      <a id="id2" class="see-project-link" href="#">See Project</a>
+    </div>
   </div>
-  <p class="project-description margin-set">A daily selection of privately personalized reads; 
-      no accounts or sign-ups required.
-  </p>
-  <ul class="prog-lang-buttons margin-set">
-    <li><a class="html lang" href="">html</a></li>
-    <li><a class="css lang" href="">css</a></li>
-    <li><a class="js lang" href="">javascript</a></li>
-  </ul>
-  <div class="see-project">
-    <a id="id2" class="see-project-link" href="#">See Project</a>
-  </div>
-</div>
 </section>
 <section class="project-intro">
-<figure class="project-picture-container">
-  <img class="project-picture" src="images/project-img/project3.svg" alt="">
-</figure>
-<div class="project-intro-right">
-  <h1 class="project-title">Tonic</h1>
-  <div class="project-stats margin-set">
-    <p class="project-place">CANOPY</p>
-    <img src="images/project-img/Counter.svg" alt="">
-    <p class="project-type">Back End Dev</p>
-    <img src="images/project-img/Counter.svg" alt="">
-    <p class="project-year">2015</p>
+  <figure class="project-picture-container">
+    <img class="project-picture" src="images/project-img/pokemon.PNG" alt="">
+  </figure>
+  <div class="project-intro-right">
+    <h1 class="project-title">PoKemon</h1>
+    <div class="project-stats margin-set">
+      <p class="project-place">Github</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-type">Full Stack Dev</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-year">2023</p>
+    </div>
+    <p class="project-description margin-set">A pokemon website is designed for children and for adults who used to love pokemon games in their childhood. From the website, users could access the different creatures which inhabit the world of pokemon games.
+      Users can give like for the creatures which they liked most and can also write their insights in the comments portion.
+    </p>
+    <ul class="prog-lang-buttons margin-set">
+      <li><a class="html lang" href="">html</a></li>
+      <li><a class="css lang" href="">css</a></li>
+      <li><a class="js lang" href="">javascript</a></li>
+    </ul>
+    <div class="see-project">
+      <a id="id3" class="see-project-link" href="#">See Project</a>
+    </div>
   </div>
-  <p class="project-description margin-set">A daily selection of privately personalized reads; 
-      no accounts or sign-ups required.
-  </p>
-  <ul class="prog-lang-buttons margin-set">
-    <li><a class="html lang" href="">html</a></li>
-    <li><a class="css lang" href="">css</a></li>
-    <li><a class="js lang" href="">javascript</a></li>
-  </ul>
-  <div class="see-project">
-    <a id="id3" class="see-project-link" href="#">See Project</a>
-  </div>
-</div>
 </section>
 <section class="project-intro">
-<figure class="project-picture-container order">
-  <img class="project-picture" src="images/project-img/project4.svg" alt="">
-</figure>
-<div class="project-intro-right">
-  <h1 class="project-title">Multi-Post
-    Stories</h1>
-  <div class="project-stats margin-set">
-    <p class="project-place">CANOPY</p>
-    <img src="images/project-img/Counter.svg" alt="">
-    <p class="project-type">Back End Dev</p>
-    <img src="images/project-img/Counter.svg" alt="">
-    <p class="project-year">2015</p>
+  <figure class="project-picture-container order">
+    <img class="project-picture" src="images/project-img/todo-react.PNG" alt="todo list app">
+  </figure>
+  <div class="project-intro-right">
+    <h1 class="project-title">Todo list</h1>
+    <div class="project-stats margin-set">
+      <p class="project-place">Github</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-type">Full Stack Dev</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-year">2023</p>
+    </div>
+    <p class="project-description margin-set">To-do list is a website which helps to organize tasks performed in a particular day. It lists the things that need to do and allows you to mark them as complete.
+    </p>
+    <ul class="prog-lang-buttons margin-set">
+      <li><a class="js-link lang" href="#">React</a></li>
+      <li><a class="css lang" href="">css</a></li>
+    </ul>
+    <div class="see-project">
+      <a id="id4" class="see-project-link" href="#">See Project</a>
+    </div>
   </div>
-  <p class="project-description margin-set">A daily selection of privately personalized reads; 
-      no accounts or sign-ups required.
-  </p>
-  <ul class="prog-lang-buttons margin-set">
-    <li><a class="html-link lang" href="">html</a></li>
-    <li><a class="css-link lang" href="#">css</a></li>
-    <li><a class="js-link lang" href="#">javascript</a></li>
-  </ul>
-  <div class="see-project">
-    <a id="id4" class="see-project-link" href="#">See Project</a>
+</section>
+<section class="project-intro">
+  <figure class="project-picture-container">
+    <img class="project-picture" src="images/project-img/mathmag.PNG" alt="">
+  </figure>
+  <div class="project-intro-right">
+    <h1 class="project-title">Math Magician</h1>
+    <div class="project-stats margin-set">
+      <p class="project-place">Github</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-type">Full Stack Dev</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-year">2023</p>
+    </div>
+    <p class="project-description margin-set">Math-magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to do different calculations using the Math JS library. 
+      It is built with React and it is fully responsive.
+    </p>
+    <ul class="prog-lang-buttons margin-set">
+      <li><a class="html lang" href="">React</a></li>
+      <li><a class="css lang" href="">css</a></li>
+    </ul>
+    <div class="see-project">
+      <a id="id5" class="see-project-link" href="#">See Project</a>
+    </div>
   </div>
-</div>
+</section>
+<section class="project-intro">
+  <figure class="project-picture-container">
+    <img class="project-picture" src="images/project-img/bookstore.PNG" alt="">
+  </figure>
+  <div class="project-intro-right">
+    <h1 class="project-title">Bookstore</h1>
+    <div class="project-stats margin-set">
+      <p class="project-place">Github</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-type">Full Stack Dev</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-year">2023</p>
+    </div>
+    <p class="project-description margin-set">Book Store is a web application that allows users to add and remove books from a list. The application is built with React and Redux. The main goal is to put into practice the concepts of React and Redux and also to use the best practices in React programming.
+    </p>
+    <ul class="prog-lang-buttons margin-set">
+      <li><a class="html lang" href="">React/Redux</a></li>
+      <li><a class="css lang" href="">css</a></li>
+    </ul>
+    <div class="see-project">
+      <a id="id6" class="see-project-link" href="#">See Project</a>
+    </div>
+  </div>
+</section>
+<section class="project-intro">
+  <figure class="project-picture-container">
+    <img class="project-picture" src="images/project-img/movie-app.PNG" alt="">
+  </figure>
+  <div class="project-intro-right">
+    <h1 class="project-title">Movie App</h1>
+    <div class="project-stats margin-set">
+      <p class="project-place">Github</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-type">Full Stack Dev</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-year">2023</p>
+    </div>
+    <p class="project-description margin-set">Movie App is a dynamic website built with react components and redux store. It allows users to access list of movies or shows. It is responsive and can be used on mobile devices. The project was built using the youtube video lesson by Dipesh Malvia.
+    </p>
+    <ul class="prog-lang-buttons margin-set">
+      <li><a class="html lang" href="">React/Redux</a></li>
+      <li><a class="css lang" href="">Scss</a></li>
+    </ul>
+    <div class="see-project">
+      <a id="id7" class="see-project-link" href="#">See Project</a>
+    </div>
+  </div>
 </section>`;
 
 portfolio.innerHTML = projects;
 
 const proObjects = [
   {
-    name: 'Tonic',
+    name: 'GEMS',
     id: 'id1',
-    featuredImage: './images/project-img/project1.svg',
+    featuredImage: './images/project-img/gems.PNG',
     description:
-    `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-    but also the leap into electronic typesetting, remaining essent`,
+    `A GEMS website helps motivational speech lovers to get information about the program details.`,
     technologies: ['html', 'css', 'javaScript'],
-    demo: 'https://yodit93.github.io/Personal-portfolio/',
-    source: 'https://github.com/yodit93/Personal-portfolio',
+    demo: 'https://yodit93.github.io/GEMS-website/',
+    source: 'https://github.com/yodit93/GEMS-website.git',
   },
   {
-    name: 'Tonic',
+    name: 'Awesome Books',
     id: 'id2',
-    featuredImage: './images/project-img/project2.svg',
+    featuredImage: './images/project-img/awesomebooks.PNG',
     description:
-    `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-    but also the leap into electronic typesetting, remaining essent`,
+    `Awesome books is a simple website that displays a list of books and allows users to add and remove books from that list.`,
     technologies: ['html', 'css', 'javaScript'],
-    demo: 'https://yodit93.github.io/Personal-portfolio/',
-    source: 'https://github.com/yodit93/Personal-portfolio',
+    demo: 'https://yodit93.github.io/Awesome-Books-ES6/',
+    source: 'https://github.com/yodit93/Awesome-Books-ES6',
   },
   {
-    name: 'Tonic',
+    name: 'PoKemon',
     id: 'id3',
-    featuredImage: './images/project-img/project3.svg',
+    featuredImage: './images/project-img/pokemon.PNG',
     description:
-    `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-    but also the leap into electronic typesetting, remaining essent`,
+    `A pokemon website is designed for children and for adults who used to love pokemon games in their childhood. From the website, users could access the different creatures which inhabit the world of pokemon games. Users can give like for the creatures which they liked most and can also write their insights in the comments portion.`,
     technologies: ['html', 'css', 'javaScript'],
-    demo: 'https://yodit93.github.io/Personal-portfolio/',
-    source: 'https://github.com/yodit93/Personal-portfolio',
+    demo: 'https://yodit93.github.io/JavaScript-capstone-group-project/dist',
+    source: 'https://github.com/yodit93/JavaScript-capstone-group-project',
   },
   {
-    name: 'Tonic',
-    id: 'id3',
-    featuredImage: './images/project-img/project4.svg',
+    name: 'Todo List',
+    id: 'id4',
+    featuredImage: './images/project-img/todo-react.PNG',
     description:
-    `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-    but also the leap into electronic typesetting, remaining essent`,
-    technologies: ['html', 'css', 'javaScript'],
-    demo: 'https://yodit93.github.io/Personal-portfolio/',
-    source: 'https://github.com/yodit93/Personal-portfolio',
+    `To-do list is a website which helps to organize tasks performed in a particular day. It lists the things that need to do and allows you to mark them as complete.`,
+    technologies: ['React'],
+    demo: 'https://todo-app-with-react.onrender.com',
+    source: 'https://github.com/yodit93/todo-app-react',
+  },
+  {
+    name: 'Math Magician',
+    id: 'id5',
+    featuredImage: './images/project-img/mathmag.PNG',
+    description:
+    `Math-magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to do different calculations using the Math JS library. It is built with React and it is fully responsive.`,
+    technologies: ['React'],
+    demo: 'https://math-magicians-full-website.onrender.com',
+    source: 'https://github.com/yodit93/Math-magicians',
+  },
+  {
+    name: 'Bookstore',
+    id: 'id6',
+    featuredImage: './images/project-img/bookstore.PNG',
+    description:
+    `Book Store is a web application that allows users to add and remove books from a list. The application is built with React and Redux. The main goal is to put into practice the concepts of React and Redux and also to use the best practices in React programming.`,
+    technologies: ['React, Redux'],
+    demo: 'https://book-store-pb0g.onrender.com',
+    source: 'https://github.com/yodit93/book-store.git',
+  },
+  {
+    name: 'Movie App',
+    id: 'id7',
+    featuredImage: './images/project-img/movie-app.PNG',
+    description:
+    `Movie App is a dynamic website built with react components and redux store. It allows users to access list of movies or shows. It is responsive and can be used on mobile devices. The project was built using the YouTube video lesson by Dipesh Malvia`,
+    technologies: ['React, Redux'],
+    demo: 'https://movie-app-t8te.onrender.com',
+    source: 'https://github.com/yodit93/movie-app',
   },
 ];
 
@@ -196,7 +289,7 @@ function selectProject(idToChecked) {
       const dStatsCon = document.createElement('div');
       dStatsCon.classList.add('project-stats', 'margin-set');
       const dStatsPlace = document.createElement('p');
-      dStatsPlace.innerText = 'CANOPY';
+      dStatsPlace.innerText = 'Github';
       dStatsPlace.classList.add('project-place');
       dStatsCon.appendChild(dStatsPlace);
 
@@ -204,7 +297,7 @@ function selectProject(idToChecked) {
       dStatsImg.src = './images/project-img/Counter.svg';
       dStatsCon.appendChild(dStatsImg);
       const dStatsType = document.createElement('p');
-      dStatsType.innerText = 'Back End Dev';
+      dStatsType.innerText = 'Full Stack Dev';
       dStatsType.classList.add('project-type');
       dStatsCon.appendChild(dStatsType);
 
@@ -213,7 +306,7 @@ function selectProject(idToChecked) {
       dStatsCon.appendChild(dStatsImg2);
 
       const dStatsYear = document.createElement('p');
-      dStatsYear.innerText = '2015';
+      dStatsYear.innerText = '2023';
       dStatsYear.classList.add('project-year');
       dStatsCon.appendChild(dStatsYear);
       dContainer.appendChild(dStatsCon);
