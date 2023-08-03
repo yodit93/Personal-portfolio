@@ -32,7 +32,7 @@ const projects = `
     <div class="project-stats margin-set">
       <p class="project-place">Ethiopia</p>
       <img src="images/project-img/Counter.svg" alt="">
-      <p class="project-type">Full Stack Dev</p>
+      <p class="project-type">Front End Dev</p>
       <img src="images/project-img/Counter.svg" alt="">
       <p class="project-year">2023</p>
     </div>
@@ -57,7 +57,7 @@ const projects = `
     <div class="project-stats margin-set">
       <p class="project-place">Github</p>
       <img src="images/project-img/Counter.svg" alt="">
-      <p class="project-type">Full Stack Dev</p>
+      <p class="project-type">Front End Dev</p>
       <img src="images/project-img/Counter.svg" alt="">
       <p class="project-year">2023</p>
     </div>
@@ -82,7 +82,7 @@ const projects = `
     <div class="project-stats margin-set">
       <p class="project-place">Github</p>
       <img src="images/project-img/Counter.svg" alt="">
-      <p class="project-type">Full Stack Dev</p>
+      <p class="project-type">Front End Dev</p>
       <img src="images/project-img/Counter.svg" alt="">
       <p class="project-year">2023</p>
     </div>
@@ -108,7 +108,7 @@ const projects = `
     <div class="project-stats margin-set">
       <p class="project-place">Github</p>
       <img src="images/project-img/Counter.svg" alt="">
-      <p class="project-type">Full Stack Dev</p>
+      <p class="project-type">Front End Dev</p>
       <img src="images/project-img/Counter.svg" alt="">
       <p class="project-year">2023</p>
     </div>
@@ -132,7 +132,7 @@ const projects = `
     <div class="project-stats margin-set">
       <p class="project-place">Github</p>
       <img src="images/project-img/Counter.svg" alt="">
-      <p class="project-type">Full Stack Dev</p>
+      <p class="project-type">Front End Dev</p>
       <img src="images/project-img/Counter.svg" alt="">
       <p class="project-year">2023</p>
     </div>
@@ -157,7 +157,7 @@ const projects = `
     <div class="project-stats margin-set">
       <p class="project-place">Github</p>
       <img src="images/project-img/Counter.svg" alt="">
-      <p class="project-type">Full Stack Dev</p>
+      <p class="project-type">Front End Dev</p>
       <img src="images/project-img/Counter.svg" alt="">
       <p class="project-year">2023</p>
     </div>
@@ -181,7 +181,7 @@ const projects = `
     <div class="project-stats margin-set">
       <p class="project-place">Github</p>
       <img src="images/project-img/Counter.svg" alt="">
-      <p class="project-type">Full Stack Dev</p>
+      <p class="project-type">Front End Dev</p>
       <img src="images/project-img/Counter.svg" alt="">
       <p class="project-year">2023</p>
     </div>
@@ -193,6 +193,29 @@ const projects = `
     </ul>
     <div class="see-project">
       <a id="id7" class="see-project-link" href="#">See Project</a>
+    </div>
+  </div>
+</section>
+<section class="project-intro">
+  <figure class="project-picture-container">
+    <img class="project-picture" src="images/project-img/schoollib.PNG" alt="">
+  </figure>
+  <div class="project-intro-right">
+    <h1 class="project-title">School Library</h1>
+    <div class="project-stats margin-set">
+      <p class="project-place">Github</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-type">Back End</p>
+      <img src="images/project-img/Counter.svg" alt="">
+      <p class="project-year">2023</p>
+    </div>
+    <p class="project-description margin-set">School library  is a project that simulates a school library. It allows you to add new person (students and teachers), add new books, and save records of who borrowed a given book and when.
+    </p>
+    <ul class="prog-lang-buttons margin-set">
+      <li><a class="html lang" href="">Ruby</a></li>
+    </ul>
+    <div class="see-project">
+      <a id="id8" class="see-project-link" href="#">See Project</a>
     </div>
   </div>
 </section>`;
@@ -269,6 +292,16 @@ const proObjects = [
     technologies: ['React, Redux'],
     demo: 'https://movie-app-t8te.onrender.com',
     source: 'https://github.com/yodit93/movie-app',
+  },
+  {
+    name: 'School Library',
+    id: 'id8',
+    featuredImage: './images/project-img/schoollib.PNG',
+    description:
+    'Movie App is a dynamic website built with react components and redux store. It allows users to access list of movies or shows. It is responsive and can be used on mobile devices. The project was built using the YouTube video lesson by Dipesh Malvia',
+    technologies: ['Ruby'],
+    demo: 'Not available yet',
+    source: 'https://github.com/yodit93/school_library',
   },
 ];
 
